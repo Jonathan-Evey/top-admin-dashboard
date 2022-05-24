@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Nunito', sans-serif;
 }
 
 :root {
@@ -39,21 +40,47 @@ header {
 .search-bar {
     display: flex;
     align-items: center;
+    width: 90%;
+}
+
+.search-bar svg {
+    flex-shrink: 0;
+    margin-right: 1rem;
+}
+
+input {
+    margin-right: 1rem;
+    max-width: 50%;
+    flex-grow: 1;
+    padding: .25rem;
+    padding-left: 1rem;
+    border-radius: 25px;
+    background-color: var(--clr-background);
+    border: 1px solid black;
 }
 
 .user-menu-container {
+    font-weight: 700;
     display: flex;
     align-items: center;
+    white-space: nowrap;
+}
+
+.notification-icon,
+.user-logo {
+    margin-right: 1rem;
 }
 
 img {
     min-width: 100%;
     min-height: 100%
 }
-.user-logo {
+.user-logo,
+.active-user-logo {
     height: 50px;
     width: 50px;
     display: flex;
+    flex-shrink: 0;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -79,7 +106,13 @@ img {
 
 .user-greating :first-child {
     margin-bottom: 0.25rem;
-    font-size: 0.70rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.user-greating :last-child {
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 1.1rem;
 }
 
 .header-button-container {
@@ -89,9 +122,20 @@ img {
 }
 
 button {
+    font-size: 1.05rem;
+    font-weight: 700;
     height: 2rem;
     width: 6rem;
     margin-left: 2rem;
+    background-color: var(--clr-main-accent);
+    border: none;
+    border-radius: 25px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: var(--clr-second-accent);
 }
 
 main {
@@ -141,8 +185,7 @@ main {
 }
 
 .project-card-text,
-.announcement-card,
-.active-user-card-container {
+.announcement-card {
     padding: 1.5rem 2rem 2rem 2rem;
 }
 
@@ -211,7 +254,31 @@ h3 {
     padding-top: 1rem;
 }
 .active-user-card-container {
+    padding: 1rem;
     border-radius: 25px;
+}
+
+.active-user-card {
+    padding-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.active-user-logo {
+    flex-shrink: 0;
+    
+}
+
+.active-user-text {
+    font-size: .7rem;
+    padding-left: .3rem;
+}
+
+.active-user-text :first-child {
+    font-size: .8rem;
+    font-weight: 600;
+    padding-bottom: .15rem;
 }
 
 aside {

@@ -1,6 +1,10 @@
 # top-admin-dashboard
 Admin Dashboard project from The Odin Project
 
+https://jonathan-evey.github.io/top-admin-dashboard/
+
+HTML / CSS / JavaScript
+
 
 Step 1: Set Up and Planning
 
